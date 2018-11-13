@@ -58,7 +58,7 @@
         <browser>firefox</browser>
         <threads>1</threads>
         <remote>false</remote>
-        <headless>true</headless>
+        <headless>false</headless>
         <seleniumGridURL/>
         <platform/>
         <browserVersion/>
@@ -162,16 +162,16 @@
                                 <proxyPort>${proxyPort}</proxyPort>
                                 <headless>${headless}</headless>
 
-                                <!--Set properties passed in by the driver binary downloader-->
+                                <!--Set properties passed in by the driver binary downloader
                                 <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
                                 <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
                                 <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
                                 <webdriver.gecko.driver>${webdriver.gecko.driver}</webdriver.gecko.driver>
                                 <webdriver.edge.driver>${webdriver.edge.driver}</webdriver.edge.driver>
-                                
-                                <!-- Eclipse fix: Comment the above, uncomment this part
-                                <webdriver.gecko.driver>${project.basedir}/src/test/resources/selenium_standalone_binaries/windows/marionette/64bit/geckodriver.exe</webdriver.gecko.driver>
                                 -->
+                                <!-- Eclipse fix: Comment the above, uncomment this part-->
+                                <webdriver.gecko.driver>${project.basedir}/src/test/resources/selenium_standalone_binaries/osx/marionette/64bit/geckodriver</webdriver.gecko.driver>
+
                             </systemPropertyVariables>
                         </configuration>
                         <executions>
