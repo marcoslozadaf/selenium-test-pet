@@ -22,7 +22,7 @@ public class SeleniumSimpleIT extends DriverBase {
     }
 
     @Test
-    public void googleImgTest() throws Exception {
+    public void petImgTest() throws Exception {
         WebDriver driver = getDriver();
 
         driver.navigate().to("http://localhost:8080/");
