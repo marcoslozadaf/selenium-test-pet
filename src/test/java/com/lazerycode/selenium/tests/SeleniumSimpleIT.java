@@ -16,7 +16,7 @@ public class SeleniumSimpleIT extends DriverBase {
     public void petTitleTest() throws Exception {
     	WebDriver driver = getDriver();
 
-        driver.navigate().to("http://localhost:8080/");
+        driver.navigate().to("http://localhost:8081/");
     
         Assert.assertTrue(driver.getTitle().contains("PetClinic"));
     }
@@ -25,7 +25,7 @@ public class SeleniumSimpleIT extends DriverBase {
     public void petImgTest() throws Exception {
         WebDriver driver = getDriver();
 
-        driver.navigate().to("http://localhost:8080/");
+        driver.navigate().to("http://localhost:8081/");
 
         WebDriverWait wait = new WebDriverWait(driver, 10, 100);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("img-responsive")));
